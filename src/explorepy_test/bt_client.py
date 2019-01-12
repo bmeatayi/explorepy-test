@@ -92,5 +92,3 @@ class BtClient:
         self.socket.connect((host, port))
 
         self.is_connected = True
-
-
