@@ -6,11 +6,11 @@ Why does this file exist, and why not put this in __main__?
   You might be tempted to import things from __main__ later, but that will cause
   problems: the code will get executed twice:
 
-  - When you run `python -mexplorepy_test` python will execute
+  - When you run `python -mexplorepy` python will execute
     ``__main__.py`` as a script. That means there won't be any
-    ``explorepy_test.__main__`` in ``sys.modules``.
+    ``explorepy.__main__`` in ``sys.modules``.
   - When you import __main__ it will get executed again (as a module) because
-    there's no ``explorepy_test.__main__`` in ``sys.modules``.
+    there's no ``explorepy.__main__`` in ``sys.modules``.
 
   Also see (1) from http://click.pocoo.org/5/setuptools/#setuptools-integration
 """
